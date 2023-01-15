@@ -1,0 +1,28 @@
+{
+  "name": "app-ts-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently npm:start:*",
+    "start:dist": "tsc -w",
+    "start:run": "nodemon dist/index.js",
+    "start:live": "livereload:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/connect-livereload": "^0.6.0",
+    "@types/express": "^4.17.15",
+    "@types/livereload": "^0.9.2",
+    "concurrently": "^7.6.0",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20"
+  }
+}
